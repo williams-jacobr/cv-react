@@ -1,0 +1,9 @@
+.cv-info-container {
+  flex: 1 1 60%;
+  border: transparent;
+  color: #2b2741;
+}
+
+.subsection {
+  margin-left: 0.5rem;
+}
