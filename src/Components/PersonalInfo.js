@@ -2,31 +2,65 @@ import Card from "./UI/Card";
 import styles from "./PersonalInfo.module.css";
 import Section from "./UI/Section";
 
+import profilePic from "../img/profile.jpg";
+
 const PersonalInfo = function (props) {
   return (
     <Card className={`${styles["personal-info-container"]} ${props.className}`}>
+      <img
+        className={styles["profile-image"]}
+        src={profilePic}
+        alt="jacob williams profile"
+      />
       <Section title="Contact">
         <ul>
           <li>
             <a href="mailto:williams.jacobr@gmail.com">
-              williams.jacobr@gmail.com
+              <i className="bi-envelope" />
+              {` williams.jacobr@gmail.com`}
             </a>
           </li>
+          <i className="bi-telephone" />
           <li>UA:+380635583568 UK:+447701020162</li>
         </ul>
       </Section>
       <Section title="Personal">
         <ul>
-          <li>Kyiv, Ukraine</li>
-          <li>6th May 1993</li>
-          <li>Stoke-On-Trent, UK</li>
+          <li>
+            <i className="bi-geo" />
+            {` Kyiv, Ukraine`}
+          </li>
+          <li>
+            <i className="bi-calendar" />
+            {` 6th May 1993`}
+          </li>
+          <li>
+            <i className="bi-house" />
+            {` Stoke-On-Trent, UK`}
+          </li>
         </ul>
       </Section>
       <Section title="On the web">
         <ul>
-          <li>jacob williams</li>
-          <li>jacobwilliams33</li>
-          <li>williams-jacobr</li>
+          <li>
+            <a href="https://www.facebook.com/jacob.williams.33">
+              <i className="bi-facebook" />
+              {` jacob williams`}
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/jacobwilliams33/">
+              {" "}
+              <i className="bi-linkedin" />
+              {` jacobwilliams33`}
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/williams-jacobr">
+              <i className="bi-github" />
+              {` williams-jacobr`}
+            </a>
+          </li>
         </ul>
       </Section>
       <Section title="Skills">
@@ -39,14 +73,14 @@ const PersonalInfo = function (props) {
       </Section>
       <Section title="Education">
         <p>
-          Masters degree in Mathematics. MMATH in Mathematics from University of
-          Manchester.
+          🎓 MMATH Masters degree in Mathematics from University of Manchester.
         </p>
       </Section>
       <Section title="Former occupation">
         <p>
           👨‍🏫 English language teacher - teaching English as a foreign language
-          (TEFL). 📲 Contact coordinator for a charity organisation.
+          (TEFL). <br />
+          📲 Contact coordinator for a charity organisation.
         </p>
       </Section>
     </Card>

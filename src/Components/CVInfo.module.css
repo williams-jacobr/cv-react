@@ -2,8 +2,37 @@
   flex: 1 1 60%;
   border: transparent;
   color: #2b2741;
+  padding: 0 2rem 0 1rem;
+}
+
+.cv-info-container h2 {
+  background-color: #2b2741;
+  color: #8febd5;
+  padding: 0.1rem 3rem 0.1rem 0.5rem;
+  display: inline-block;
+  border-radius: 0 0.5rem 0 0.5rem;
+
+  font-weight: 900;
+}
+
+.cv-info-container a {
+  text-decoration: underline;
+}
+
+.cv-info-container ul {
+  list-style: none;
+  padding: 0 0.5rem;
+}
+.cv-info-container li {
+  padding: 0.1rem;
 }
 
 .subsection {
   margin-left: 0.5rem;
+}
+
+.subsection h2 {
+  color: #2b2741;
+  background-color: transparent;
+  padding: 0;
 }

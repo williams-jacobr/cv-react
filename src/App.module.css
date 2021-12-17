@@ -4,6 +4,8 @@
 #E7F7F4 
 */
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 * {
   box-sizing: border-box;
 }
@@ -11,9 +13,24 @@
 html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background: #8febd618;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main {
+  background: white;
   width: 90%;
   margin: 2rem auto;
   border-color: transparent;
