@@ -35,8 +35,11 @@ a {
   margin: 2rem auto;
   border-color: transparent;
   box-shadow: 0 0 1rem grey;
-  display: flex;
   overflow: hidden;
+}
+
+.container {
+  display: flex;
 }
 
 .section {

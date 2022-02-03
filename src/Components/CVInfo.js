@@ -4,7 +4,10 @@ import Section from "./UI/Section";
 
 const CVInfo = function (props) {
   return (
-    <Card className={`${styles["cv-info-container"]} ${props.className}`}>
+    <Card
+      ref={null}
+      className={`${styles["cv-info-container"]} ${props.className}`}
+    >
       <Section title="◖Profile">
         <p>
           I am an enthusiastic self-taught student of front end development.

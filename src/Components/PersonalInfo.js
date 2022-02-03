@@ -2,11 +2,30 @@ import Card from "./UI/Card";
 import styles from "./PersonalInfo.module.css";
 import Section from "./UI/Section";
 
+import domtoimage from "dom-to-image";
+import { saveAs } from "file-saver";
+
 import profilePic from "../img/profile.jpg";
+import { useRef } from "react";
 
 const PersonalInfo = function (props) {
+  const printButton = useRef(null);
+
+  const printButtonClickHandler = async function () {
+    const node = props.printContainer.current;
+
+    const img = await domtoimage.toBlob(node, {
+      filter: (node) => node !== printButton.current || node.tagName !== "i",
+    });
+
+    window.saveAs(img, "Jacob_Williams_CV.png");
+  };
+
   return (
-    <Card className={`${styles["personal-info-container"]} ${props.className}`}>
+    <Card
+      ref={null}
+      className={`${styles["personal-info-container"]} ${props.className}`}
+    >
       <img
         className={styles["profile-image"]}
         src={profilePic}
@@ -83,6 +102,11 @@ const PersonalInfo = function (props) {
           📲 Contact coordinator for a charity organisation.
         </p>
       </Section>
+      <div>
+        <button ref={printButton} onClick={printButtonClickHandler}>
+          Print
+        </button>
+      </div>
     </Card>
   );
 };

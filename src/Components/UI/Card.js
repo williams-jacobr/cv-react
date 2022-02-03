@@ -1,9 +1,20 @@
+import React from "react";
 import styles from "./Card.module.css";
 
-const Card = function (props) {
+const Card = React.forwardRef((props, ref) => {
   const classes = `${styles.card} ${props.className}`;
 
-  return <div className={classes}>{props.children}</div>;
-};
+  if (ref) {
+    return (
+      <div className={classes} ref={ref}>
+        {props.children}
+      </div>
+    );
+  }
+
+  if (!ref) {
+    return <div className={classes}>{props.children}</div>;
+  }
+});
 
 export default Card;
