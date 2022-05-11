@@ -24,3 +24,20 @@
   width: 100%;
   padding: 0.5rem 0;
 }
+
+.printer-button {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.195);
+  border: #8febd65a 0.1rem solid;
+  border-radius: 0.5rem;
+  font-size: large;
+  color: #8febd5;
+}
+
+.printer-button:hover {
+  background: #8febd5;
+  cursor: pointer;
+  color: #2b2741;
+}

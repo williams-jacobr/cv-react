@@ -35,4 +35,9 @@
   color: #2b2741;
   background-color: transparent;
   padding: 0;
+  display: inline;
+}
+
+.subsection p {
+  display: inline;
 }

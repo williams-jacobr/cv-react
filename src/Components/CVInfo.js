@@ -1,6 +1,7 @@
 import Card from "./UI/Card";
 import styles from "./CVInfo.module.css";
 import Section from "./UI/Section";
+import Subsection from "./UI/Subsection";
 
 const CVInfo = function (props) {
   return (
@@ -13,9 +14,9 @@ const CVInfo = function (props) {
           I am an enthusiastic self-taught student of front end development.
           <br />
           <br />
-          During the course of 2021 I have finally seized the opportunity to do
-          what I most loved when I was in college - code! I decided to take back
-          the feeling I had throughout college and university - comfort and
+          During the course of 2021/22 I have finally seized the opportunity to
+          do what I most loved when I was in college - code! I decided to take
+          back the feeling I had throughout college and university - comfort and
           fulfilment from doing what I am great at. I cut back my hours as a
           teacher and dedicated my free time to courses on Javascript, CSS, and
           even some full-stack development to begin to understand how these
@@ -29,69 +30,46 @@ const CVInfo = function (props) {
       </Section>
       <Section title="◖Experience">Hello</Section>
       <Section title="◖Projects">
-        <Section title="Personal Website" className={styles.subsection}>
+        <Subsection
+          title="Great Quotes"
+          to="https://react-http-bf455.web.app/quotes"
+          className={styles.subsection}
+        >
           <p>
-            My first project away from any course or access to help and
-            direction. My aim here is to build a space where people can learn
-            about me, my interests, and keep up-to-date on the things which I am
-            working on. This project showcases a number of techniques in JS and
-            CSS, including an independently designed MVC architecture which
-            makes use of ES6 classes and asynchronous javascript. This project
-            also taps into external APIs, including the github REST API and the
-            Leaflet library.
+            TEXT
             <br />
-            <br />
-            <br />
-            {`Visit: `}
-            <a href="https://jacob-williams.netlify.app/">
-              jacob-williams.netlify.app/
-            </a>
-            <br />
-            <br />
-            {`GitHub: `}
-            <a href="https://github.com/williams-jacobr/jacob-williams-website">
-              github.com/williams-jacobr/jacob-williams-website
+            <i className="bi-github" />
+            <p> </p>
+            <a href="https://github.com/williams-jacobr/React-Course/tree/main/Router%20Project">
+              github.com/williams-jacobr/React-Course/tree/main/RouterProject
             </a>
           </p>
-        </Section>
-        <Section title="uHost" className={styles.subsection}>
+        </Subsection>
+        <Subsection
+          title="Forkify"
+          to="https://forkify-jacob-r-williams.netlify.app/</Section>"
+          className={styles.subsection}
+        >
           <p>
             This project was the culmination of the techniques I learned through
-            an online Javascript course on udemy.com.
+            an online Javascript course, making use of many techniques including
+            asynchronous Javascript, ES6 classes, and implementation of MVC
+            architecture. This project marked a real step up in my approach to
+            project implementation - it opened my eyes to not just the processes
+            needed to get a website up and running, but also to the hugh array
+            of options available and possibilities to dive into.
             <br />
-            <br />
-            An application for users to search for recipes by keyword, modify
-            the recipe ratios to their desired serving, create their own recipes
-            (which are then pushed onto the external library), and bookmark
-            favourites to be able to access them later. In this project I make
-            use of many techniques including asynchronous Javascript, ES6
-            classes, and implementation of MVC architecture.
-            <br />
-            <br />
-            This project marked a real step up in my approach to project
-            implementation. Whether it be through a full analysis of which parts
-            of the application are part of the model, the view, or the
-            controller, or through making use of npm and external libraries,
-            including bundlers, polyfillers, etc, the project pushed me to learn
-            a range of skills. These skills opened my eyes to not just the
-            processes needed to get a website up and running, but also to the
-            hugh array of options available and possibilities to dive into.
-            <br />
-            <br />
-            <br />
-            {`Visit: `}
-            <a href="https://williams-jacobr.github.io/uHost/">
-              williams-jacobr.github.io/uHost/
-            </a>
-            <br />
-            <br />
-            {`GitHub: `}
+            <i className="bi-github" />{" "}
             <a href="https://github.com/williams-jacobr/forkify">
               github.com/williams-jacobr/forkify
             </a>
           </p>
-        </Section>
-        <Section title="forkify" className={styles.subsection}>
+        </Subsection>
+        <Subsection
+          title="uHost"
+          to="https://williams-jacobr.github.io/uHost/"
+          className={styles.subsection}
+        >
           <p>
             This project helped me to expand on my CSS skills, in order to be
             able to break away from templates supplied by online tutorials. In
@@ -99,34 +77,44 @@ const CVInfo = function (props) {
             along with a whole range of more traditional CSS techniques, as well
             as reactive design by making use of media queries.
             <br />
-            <br />
-            The application itself is a template of a server hosting service
-            website. The design is very minimal and easy to navigate,
-            demonstrating the use of transitions and animations to please the
-            users eye and push the user towards CTAs.
-            <br />
-            <br />
-            <br />
-            {`Visit: `}
-            <a href="https://forkify-jacob-r-williams.netlify.app/">
-              forkify-jacob-r-williams.netlify.app/
-            </a>
-            <br />
-            <br />
-            {`GitHub: `}
+            <i className="bi-github" />{" "}
             <a href="https://github.com/williams-jacobr/uHost">
               github.com/williams-jacobr/uHost
             </a>
           </p>
-        </Section>
+        </Subsection>
+        <Subsection
+          title="Personal Website"
+          to="https://jacob-williams.netlify.app/"
+          className={styles.subsection}
+        >
+          <p>
+            This project showcases a number of techniques implemented in pure JS
+            and CSS, including an independently designed MVC architecture which
+            makes use of ES6 classes and asynchronous javascript. This project
+            also taps into third party REST APIs.
+            <br />
+            <i className="bi-github" />{" "}
+            <a href="https://github.com/williams-jacobr/jacob-williams-website">
+              github.com/williams-jacobr/jacob-williams-website
+            </a>
+          </p>
+        </Subsection>
       </Section>
       <Section title="◖Expanding my skills">
         <ul>
           <li>
-            📈 Turning my attention to commonly used JS libraries, especially
-            React, and associated frameworks, such as React Native.
+            📈 Becoming well acquainted with essential JS libraries, especially
+            React and Redux.
           </li>
-          <li>📈 Working on real world style projects</li>
+          <li>
+            📈 Exploring further libraries that can push me to the next level,
+            including Next.js
+          </li>
+          <li>
+            📈 Working on real world projects with medium to large size user
+            bases
+          </li>
         </ul>
       </Section>
     </Card>

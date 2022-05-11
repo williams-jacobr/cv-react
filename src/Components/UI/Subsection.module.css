@@ -1,0 +1,24 @@
+.subsection {
+  padding: 0 0 1rem 0;
+}
+
+.subsection h2 {
+  line-height: 1rem;
+}
+
+.subsection p {
+  vertical-align: text-bottom;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+a.link:hover {
+  text-decoration: underline;
+}
+
+.link i {
+  font-size: small;
+  vertical-align: super;
+}

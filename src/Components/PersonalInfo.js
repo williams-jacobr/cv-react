@@ -103,7 +103,11 @@ const PersonalInfo = function (props) {
         </p>
       </Section>
       <div>
-        <button ref={printButton} onClick={printButtonClickHandler}>
+        <button
+          className={styles["printer-button"]}
+          ref={printButton}
+          onClick={printButtonClickHandler}
+        >
           Print
         </button>
       </div>
