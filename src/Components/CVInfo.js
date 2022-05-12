@@ -3,6 +3,8 @@ import styles from "./CVInfo.module.css";
 import Section from "./UI/Section";
 import Subsection from "./UI/Subsection";
 
+import { BsGithub, BsGraphUp } from "react-icons/bs";
+
 const CVInfo = function (props) {
   return (
     <Card
@@ -38,8 +40,7 @@ const CVInfo = function (props) {
           <p>
             TEXT
             <br />
-            <i className="bi-github" />
-            <p> </p>
+            <BsGithub />{" "}
             <a href="https://github.com/williams-jacobr/React-Course/tree/main/Router%20Project">
               github.com/williams-jacobr/React-Course/tree/main/RouterProject
             </a>
@@ -59,7 +60,7 @@ const CVInfo = function (props) {
             needed to get a website up and running, but also to the hugh array
             of options available and possibilities to dive into.
             <br />
-            <i className="bi-github" />{" "}
+            <BsGithub />{" "}
             <a href="https://github.com/williams-jacobr/forkify">
               github.com/williams-jacobr/forkify
             </a>
@@ -77,7 +78,7 @@ const CVInfo = function (props) {
             along with a whole range of more traditional CSS techniques, as well
             as reactive design by making use of media queries.
             <br />
-            <i className="bi-github" />{" "}
+            <BsGithub />{" "}
             <a href="https://github.com/williams-jacobr/uHost">
               github.com/williams-jacobr/uHost
             </a>
@@ -94,7 +95,7 @@ const CVInfo = function (props) {
             makes use of ES6 classes and asynchronous javascript. This project
             also taps into third party REST APIs.
             <br />
-            <i className="bi-github" />{" "}
+            <BsGithub />{" "}
             <a href="https://github.com/williams-jacobr/jacob-williams-website">
               github.com/williams-jacobr/jacob-williams-website
             </a>
@@ -104,16 +105,16 @@ const CVInfo = function (props) {
       <Section title="◖Expanding my skills">
         <ul>
           <li>
-            📈 Becoming well acquainted with essential JS libraries, especially
-            React and Redux.
+            <BsGraphUp className={styles.graph} /> Becoming well acquainted with
+            essential JS libraries, especially React and Redux.
           </li>
           <li>
-            📈 Exploring further libraries that can push me to the next level,
-            including Next.js
+            <BsGraphUp className={styles.graph} /> Exploring further libraries
+            that can push me to the next level, including Next.js
           </li>
           <li>
-            📈 Working on real world projects with medium to large size user
-            bases
+            <BsGraphUp className={styles.graph} /> Working on real world
+            projects with medium to large size user bases
           </li>
         </ul>
       </Section>

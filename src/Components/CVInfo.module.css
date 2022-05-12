@@ -41,3 +41,8 @@
 .subsection p {
   display: inline;
 }
+
+.graph {
+  color: #e34c26;
+  font-size: x-small;
+}

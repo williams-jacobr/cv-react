@@ -18,7 +18,8 @@ a.link:hover {
   text-decoration: underline;
 }
 
-.link i {
+.super {
   font-size: small;
   vertical-align: super;
+  text-decoration: none;
 }
