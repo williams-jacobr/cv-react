@@ -17,12 +17,41 @@
 .personal-info-container ul {
   list-style: none;
   padding: 0;
+  margin: 0.75rem 0;
+}
+
+.personal-info-container p {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.icon {
+  margin: 0 0.5rem 0 0;
 }
 
 .profile-image {
   height: auto;
   width: 100%;
   padding: 0.5rem 0;
+  margin-top: 0.5rem;
+}
+
+.email {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.phone-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.phone-numbers p {
+  display: block;
+  line-height: 1.1rem;
 }
 
 .printer-button {

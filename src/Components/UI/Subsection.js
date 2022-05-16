@@ -6,10 +6,12 @@ const Subsection = function (props) {
 
   return (
     <div className={`${props.className} ${styles.subsection}`}>
-      <a href={to} className={styles.link}>
-        <h2>{title}</h2> <BsArrowUpRightSquare className={styles.super} />
-      </a>{" "}
-      {props.children}
+      {to && (
+        <a href={to} className={styles.link}>
+          <h2>{title}</h2> <BsArrowUpRightSquare className={styles.super} />
+        </a>
+      )}
+      {!to && <h2>{title}</h2>} {props.children}
     </div>
   );
 };

@@ -37,18 +37,17 @@ const CVInfo = function (props) {
           to="https://react-http-bf455.web.app/quotes"
           className={styles.subsection}
         >
-          <p>
-            TEXT
-            <br />
-            <BsGithub />{" "}
+          <p>TEXT</p>
+          <div className="bullet-grid">
+            <BsGithub />
             <a href="https://github.com/williams-jacobr/React-Course/tree/main/Router%20Project">
               github.com/williams-jacobr/React-Course/tree/main/RouterProject
             </a>
-          </p>
+          </div>
         </Subsection>
         <Subsection
           title="Forkify"
-          to="https://forkify-jacob-r-williams.netlify.app/</Section>"
+          to="https://forkify-jacob-r-williams.netlify.app/"
           className={styles.subsection}
         >
           <p>
@@ -59,12 +58,13 @@ const CVInfo = function (props) {
             project implementation - it opened my eyes to not just the processes
             needed to get a website up and running, but also to the hugh array
             of options available and possibilities to dive into.
-            <br />
-            <BsGithub />{" "}
+          </p>
+          <div className="bullet-grid">
+            <BsGithub />
             <a href="https://github.com/williams-jacobr/forkify">
               github.com/williams-jacobr/forkify
             </a>
-          </p>
+          </div>
         </Subsection>
         <Subsection
           title="uHost"
@@ -77,46 +77,46 @@ const CVInfo = function (props) {
             this course I learned how to work with flexbox, CSS grid, and SASS,
             along with a whole range of more traditional CSS techniques, as well
             as reactive design by making use of media queries.
-            <br />
-            <BsGithub />{" "}
+          </p>
+          <div className="bullet-grid">
+            <BsGithub />
             <a href="https://github.com/williams-jacobr/uHost">
               github.com/williams-jacobr/uHost
             </a>
-          </p>
+          </div>
         </Subsection>
-        <Subsection
-          title="Personal Website"
-          to="https://jacob-williams.netlify.app/"
-          className={styles.subsection}
-        >
+        <Subsection title="Personal Website" className={styles.subsection}>
           <p>
             This project showcases a number of techniques implemented in pure JS
             and CSS, including an independently designed MVC architecture which
             makes use of ES6 classes and asynchronous javascript. This project
             also taps into third party REST APIs.
-            <br />
-            <BsGithub />{" "}
+          </p>
+          <div className="bullet-grid">
+            <BsGithub />
             <a href="https://github.com/williams-jacobr/jacob-williams-website">
               github.com/williams-jacobr/jacob-williams-website
             </a>
-          </p>
+          </div>
         </Subsection>
       </Section>
       <Section title="◖Expanding my skills">
-        <ul>
-          <li>
-            <BsGraphUp className={styles.graph} /> Becoming well acquainted with
-            essential JS libraries, especially React and Redux.
-          </li>
-          <li>
-            <BsGraphUp className={styles.graph} /> Exploring further libraries
-            that can push me to the next level, including Next.js
-          </li>
-          <li>
-            <BsGraphUp className={styles.graph} /> Working on real world
-            projects with medium to large size user bases
-          </li>
-        </ul>
+        <div className={`${styles.skills} bullet-grid`}>
+          <BsGraphUp className={styles.graph} />
+          <p>
+            Becoming well acquainted with essential JS libraries, especially
+            React and Redux.
+          </p>
+          <BsGraphUp className={styles.graph} />
+          <p>
+            Exploring further libraries that can push me to the next level,
+            including Next.js
+          </p>
+          <BsGraphUp className={styles.graph} />
+          <p>
+            Working on real world projects with medium to large size user bases
+          </p>
+        </div>
       </Section>
     </Card>
   );

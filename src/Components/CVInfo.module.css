@@ -3,11 +3,13 @@
   border: transparent;
   color: #2b2741;
   padding: 0 2rem 0 1rem;
+  margin-top: 1rem;
 }
 
 .cv-info-container h2 {
   background-color: #2b2741;
   color: #8febd5;
+  margin: 0.5rem 0;
   padding: 0.1rem 3rem 0.1rem 0.5rem;
   display: inline-block;
   border-radius: 0 0.5rem 0 0.5rem;
@@ -45,4 +47,9 @@
 .graph {
   color: #e34c26;
   font-size: x-small;
+}
+
+.skills p {
+  margin: 0;
+  padding: 0;
 }

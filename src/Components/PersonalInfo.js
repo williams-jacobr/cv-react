@@ -49,28 +49,38 @@ const PersonalInfo = function (props) {
       <Section title="Contact">
         <ul>
           <li>
-            <a href="mailto:williams.jacobr@gmail.com">
-              <BsEnvelope />
-              {` williams.jacobr@gmail.com`}
-            </a>
+            <div className={styles.email}>
+              <a href="mailto:williams.jacobr@gmail.com">
+                <BsEnvelope className={styles.icon} />
+                <p>williams.jacobr@gmail.com</p>
+              </a>
+            </div>
           </li>
-          <BsTelephone />
-          <li>UA:+380635583568 UK:+447701020162</li>
+
+          <li>
+            <div className={styles["phone-container"]}>
+              <BsTelephone className={styles.icon} />
+              <div className={styles["phone-numbers"]}>
+                <p>UA:+380635583568</p>
+                <p>UK:+447701020162</p>
+              </div>
+            </div>
+          </li>
         </ul>
       </Section>
       <Section title="Personal">
         <ul>
           <li>
-            <BsGeo />
-            {` Kyiv, Ukraine`}
+            <BsGeo className={styles.icon} />
+            {`Kyiv, Ukraine`}
           </li>
           <li>
-            <BsCalendar />
-            {` 6th May 1993`}
+            <BsCalendar className={styles.icon} />
+            {`6th May 1993`}
           </li>
           <li>
-            <BsHouse />
-            {` Stoke-On-Trent, UK`}
+            <BsHouse className={styles.icon} />
+            {`Stoke-On-Trent, UK`}
           </li>
         </ul>
       </Section>
@@ -78,21 +88,21 @@ const PersonalInfo = function (props) {
         <ul>
           <li>
             <a href="https://www.facebook.com/jacob.williams.33">
-              <BsFacebook />
-              {` jacob williams`}
+              <BsFacebook className={styles.icon} />
+              {`jacob williams`}
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/jacobwilliams33/">
               {" "}
-              <BsLinkedin />
-              {` jacobwilliams33`}
+              <BsLinkedin className={styles.icon} />
+              {`jacobwilliams33`}
             </a>
           </li>
           <li>
             <a href="https://github.com/williams-jacobr">
-              <BsGithub />
-              {` williams-jacobr`}
+              <BsGithub className={styles.icon} />
+              {`williams-jacobr`}
             </a>
           </li>
         </ul>
@@ -100,30 +110,41 @@ const PersonalInfo = function (props) {
       <Section title="Skills">
         <ul>
           <li>
-            <SiJavascript className={styles.js} /> Javascript{" "}
+            <SiJavascript className={`${styles.js} ${styles.icon}`} />
+            Javascript
           </li>
           <li>
-            <SiReact className={styles.react} /> React.Js
+            <SiReact className={`${styles.react} ${styles.icon}`} />
+            React.Js
           </li>
           <li>
-            <IoLogoCss3 className={styles.css} /> CSS/SCSS
+            <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
+            CSS/SCSS
           </li>
           <li>
-            <IoLogoHtml5 className={styles.html} /> HTML5
+            <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
+            HTML5
           </li>
         </ul>
       </Section>
       <Section title="Education">
-        <p>
-          🎓 MMATH Masters degree in Mathematics from University of Manchester.
-        </p>
+        <div className="bullet-grid">
+          <p>🎓</p>
+          <p>
+            MMATH Masters degree in Mathematics from University of Manchester.
+          </p>
+        </div>
       </Section>
       <Section title="Former occupation">
-        <p>
-          👨‍🏫 English language teacher - teaching English as a foreign language
-          (TEFL). <br />
-          📲 Contact coordinator for a charity organisation.
-        </p>
+        <div className="bullet-grid">
+          <p>👨‍🏫</p>
+          <p>
+            English language teacher - teaching English as a foreign language
+            (TEFL).
+          </p>
+          <p>📲</p>
+          <p>Contact coordinator for a charity organisation.</p>
+        </div>
       </Section>
       <div>
         <button
