@@ -127,14 +127,6 @@ const PersonalInfo = function (props) {
           </li>
         </ul>
       </Section>
-      <Section title="Education">
-        <div className="bullet-grid">
-          <p>🎓</p>
-          <p>
-            MMATH Masters degree in Mathematics from University of Manchester.
-          </p>
-        </div>
-      </Section>
       <Section title="Former occupation">
         <div className="bullet-grid">
           <p>👨‍🏫</p>
@@ -146,12 +138,8 @@ const PersonalInfo = function (props) {
           <p>Contact coordinator for a charity organisation.</p>
         </div>
       </Section>
-      <div>
-        <button
-          className={styles["printer-button"]}
-          ref={printButton}
-          onClick={printButtonClickHandler}
-        >
+      <div className={styles["printer-button"]}>
+        <button ref={printButton} onClick={printButtonClickHandler}>
           Print
         </button>
       </div>

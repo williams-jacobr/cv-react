@@ -11,33 +11,56 @@ const CVInfo = function (props) {
       ref={null}
       className={`${styles["cv-info-container"]} ${props.className}`}
     >
-      <Section title="◖Profile">
+      <Section>
         <p>
-          I am an enthusiastic self-taught student of front end development.
+          A driven and ambituous mathematician with a keen interest in
+          programming seeking to apply for a front-end developer position in an
+          exciting company. Since getting my first taste of programming through
+          HTML and Visual Basic at college, through to the use of MatLab and R
+          at university, and onward to my current fascination in front-end
+          development now, I have been intrigued by the draw of programming for
+          12+ years.
           <br />
           <br />
-          During the course of 2021/22 I have finally seized the opportunity to
-          do what I most loved when I was in college - code! I decided to take
-          back the feeling I had throughout college and university - comfort and
-          fulfilment from doing what I am great at. I cut back my hours as a
-          teacher and dedicated my free time to courses on Javascript, CSS, and
-          even some full-stack development to begin to understand how these
-          languages fit into the bigger picture.
+          Having cut back my hours as a teacher, and dedicated my free time to
+          udemy courses on Javascript, React, CSS, and even some full-stack
+          development, I am ready to make the difference at your company by
+          implementing my determination to achieve . Looking forward to working
+          with your company.
           <br />
-          <br />I feel ready to and am enormously excited to get involved with a
-          project or company. I am desperate to touch, to feel, to understand a
-          real-world implementation of the skills which I have long wished I had
-          been using ever since I left school.
+          <br />- willpower and desire to achieve from teaching freelance -
+          capable mind from mathematician - real tangible skills now from udemy
         </p>
       </Section>
-      <Section title="◖Experience">Hello</Section>
+      <Section title="◖Education">
+        <div className={styles.education}>
+          <h1>MMATH Masters in Mathematics</h1>
+          <h2>First Class Degree</h2>
+
+          <h3>
+            <a href="https://www.maths.manchester.ac.uk/">
+              University of Manchester
+            </a>
+          </h3>
+
+          <h4>September 2011 - August 2015</h4>
+          <h5>Manchester, UK</h5>
+        </div>
+      </Section>
       <Section title="◖Projects">
         <Subsection
           title="Great Quotes"
           to="https://react-http-bf455.web.app/quotes"
           className={styles.subsection}
         >
-          <p>TEXT</p>
+          <p>
+            A project that demonstrates use of all the basic React concepts,
+            including custom hooks and React Router. The simple application
+            makes use of reusable components, props, and conditional rendering.
+            This project marks a noticeable shift in my front-end development
+            code by creating an application that is much easier to maintain,
+            manage, and expand.
+          </p>
           <div className="bullet-grid">
             <BsGithub />
             <a href="https://github.com/williams-jacobr/React-Course/tree/main/Router%20Project">
@@ -100,8 +123,8 @@ const CVInfo = function (props) {
           </div>
         </Subsection>
       </Section>
-      <Section title="◖Expanding my skills">
-        <div className={`${styles.skills} bullet-grid`}>
+      <Section title="◖Expanding my skills" className={styles.skills}>
+        <div className="bullet-grid">
           <BsGraphUp className={styles.graph} />
           <p>
             Becoming well acquainted with essential JS libraries, especially
@@ -109,13 +132,24 @@ const CVInfo = function (props) {
           </p>
           <BsGraphUp className={styles.graph} />
           <p>
-            Exploring further libraries that can push me to the next level,
-            including Next.js
+            Working on real world projects with medium to large size user bases
           </p>
           <BsGraphUp className={styles.graph} />
           <p>
-            Working on real world projects with medium to large size user bases
+            Exploring further libraries that can push me to the next level,
+            including Next.js and Node.js
           </p>
+          <BsGraphUp className={styles.graph} />
+          <p>Familiarising myself with JS frameworks such as Angular or Vue</p>
+          <BsGraphUp className={styles.graph} />
+          <p>Familiarising myself with Node frameworks such as Express.js</p>
+          <BsGraphUp className={styles.graph} />
+          <p>
+            Becoming better acquainted with database management such as a deeper
+            dive into PostgreSQL or equivalents
+          </p>
+          <BsGraphUp className={styles.graph} />
+          <p>Compining the above to expand into full-stack development</p>
         </div>
       </Section>
     </Card>

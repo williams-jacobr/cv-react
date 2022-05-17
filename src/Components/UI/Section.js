@@ -3,7 +3,7 @@ const Section = function (props) {
 
   return (
     <div className={props.className}>
-      <h2>{title}</h2>
+      {title ? <h2>{title}</h2> : ''}
       {props.children}
     </div>
   );

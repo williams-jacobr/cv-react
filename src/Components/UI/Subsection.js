@@ -1,5 +1,5 @@
 import styles from "./Subsection.module.css";
-import { BsArrowUpRightSquare } from "react-icons/bs";
+import { RiShareBoxLine } from "react-icons/ri";
 
 const Subsection = function (props) {
   const { title, to } = props;
@@ -8,7 +8,7 @@ const Subsection = function (props) {
     <div className={`${props.className} ${styles.subsection}`}>
       {to && (
         <a href={to} className={styles.link}>
-          <h2>{title}</h2> <BsArrowUpRightSquare className={styles.super} />
+          <h2>{title}</h2> <RiShareBoxLine className={styles.super} />
         </a>
       )}
       {!to && <h2>{title}</h2>} {props.children}

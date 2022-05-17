@@ -3,6 +3,7 @@ import Card from "./Components/UI/Card";
 import CVInfo from "./Components/CVInfo";
 import PersonalInfo from "./Components/PersonalInfo";
 import { useEffect, useRef } from "react";
+import Header from "./Components/UI/Header";
 
 function App() {
   const appContainer = useRef(null);
@@ -10,7 +11,10 @@ function App() {
   return (
     <Card className={styles.main}>
       <div className={styles.container} ref={appContainer}>
-        <CVInfo className={styles.section} />
+        <div>
+          <Header />
+          <CVInfo className={styles.section} />
+        </div>
         <PersonalInfo
           className={styles.section}
           printContainer={appContainer}

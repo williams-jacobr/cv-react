@@ -8,6 +8,9 @@
 
   margin: 0;
   border-radius: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .personal-info-container h2 {
@@ -55,6 +58,10 @@
 }
 
 .printer-button {
+  margin-top: auto;
+}
+
+.printer-button button {
   width: 100%;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
@@ -63,9 +70,10 @@
   border-radius: 0.5rem;
   font-size: large;
   color: #8febd5;
+  margin-top: max-content;
 }
 
-.printer-button:hover {
+.printer-button button:hover {
   background: #8febd5;
   cursor: pointer;
   color: #2b2741;
@@ -85,4 +93,10 @@
 
 .css {
   color: #264de4;
+}
+
+@media (min-width: 1200px) {
+  .personal-info-container {
+    padding: 1rem 1.5rem;
+  }
 }
