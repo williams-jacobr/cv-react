@@ -5,31 +5,34 @@ import Subsection from "./UI/Subsection";
 
 import { BsGithub, BsGraphUp } from "react-icons/bs";
 
+import { IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
+
+import { SiReact, SiJavascript } from "react-icons/si";
+
 const CVInfo = function (props) {
   return (
     <Card
       ref={null}
       className={`${styles["cv-info-container"]} ${props.className}`}
     >
-      <Section>
+      <Section className={styles.profile}>
         <p>
           A driven and ambituous mathematician with a keen interest in
           programming seeking to apply for a front-end developer position in an
           exciting company. Since getting my first taste of programming through
           HTML and Visual Basic at college, through to the use of MatLab and R
           at university, and onward to my current fascination in front-end
-          development now, I have been intrigued by the draw of programming for
-          12+ years.
+          development, I have been intrigued by the draw of programming for 12+
+          years.
           <br />
           <br />
-          Having cut back my hours as a teacher, and dedicated my free time to
-          udemy courses on Javascript, React, CSS, and even some full-stack
-          development, I am ready to make the difference at your company by
-          implementing my determination to achieve . Looking forward to working
-          with your company.
-          <br />
-          <br />- willpower and desire to achieve from teaching freelance -
-          capable mind from mathematician - real tangible skills now from udemy
+          Having cut back my hours as a self-made freelance EFL teacher to
+          dedicate 100s of hours to Udemy courses on Javascript, React, CSS, and
+          even some full-stack development, I am ready to make the difference at
+          your company by implementing my willpower and determination to
+          achieve. As a very capable mathematician and problem solver, with
+          real, tangible, front-end development skills, I am looking forward to
+          working with your company.
         </p>
       </Section>
       <Section title="◖Education">
@@ -47,6 +50,47 @@ const CVInfo = function (props) {
           <h5>Manchester, UK</h5>
         </div>
       </Section>
+      <div className={styles['side-by-side']}>
+      <Section title="◖Certificates">
+        <div className={styles.education}>
+          <h1>Javascript</h1>
+          <h2>The Complete Javascript Course</h2>
+          <h3>{}</h3>
+
+          <h4>July 2021</h4>
+
+          <h1>Cascading Style Sheets (CSS)</h1>
+          <h2>CSS - The Complete Guide</h2>
+          <h3>{}</h3>
+          <h4>August 2021</h4>
+
+          <h1>MEAN Stack</h1>
+          <h2>Angular & NodeJS - The MEAN Stack Guide</h2>
+          <h3>{}</h3>
+          <h4>November 2021</h4>
+        </div>
+      </Section>
+      <Section title="◖Skills">
+      <ul>
+          <li>
+            <SiJavascript className={`${styles.js} ${styles.icon}`} />
+            Javascript
+          </li>
+          <li>
+            <SiReact className={`${styles.react} ${styles.icon}`} />
+            React.Js
+          </li>
+          <li>
+            <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
+            CSS/SCSS
+          </li>
+          <li>
+            <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
+            HTML5
+          </li>
+        </ul>
+      </Section>
+      </div>
       <Section title="◖Projects">
         <Subsection
           title="Great Quotes"

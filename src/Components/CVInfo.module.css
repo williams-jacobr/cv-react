@@ -2,8 +2,8 @@
   flex: 1 1 60%;
   border: transparent;
   color: #2b2741;
-  padding: 0 2rem 0 1rem;
-  margin-top: 1rem;
+  padding: 0 3rem 0 1rem;
+  background-color: white;
 }
 
 .cv-info-container h2 {
@@ -44,14 +44,8 @@
   display: inline;
 }
 
-.graph {
-  color: #e34c26;
-  font-size: x-small;
-}
-
-.skills p {
-  margin: 0;
-  padding: 0;
+.profile p {
+  margin-bottom: 1rem;
 }
 
 .education {
@@ -60,6 +54,7 @@
   grid-template-columns: auto max-content;
   grid-template-rows: auto auto auto;
   align-items: baseline;
+  margin-left: 0.5rem;
 }
 
 .education h1 {
@@ -109,6 +104,38 @@
   font-size: 0.8rem;
 }
 
+.side-by-side {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.side-by-side:first-child {
+  width: 70%;
+}
+
+.side-by-side:nth-child(2) {
+  flex-grow: 1;
+}
+
+.certificates {
+  margin-left: 0.5rem;
+}
+
+.certificates > h2 {
+  font-size: 1.2rem;
+  padding-right: 1rem;
+}
+
+.graph {
+  color: #e34c26;
+  font-size: x-small;
+}
+
+.skills p {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: 1200px) {
   .cv-info-container {
     padding: 1rem 3rem 1rem 2rem;
@@ -151,4 +178,24 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.icon {
+  margin: 0 0.5rem 0 0;
+}
+
+.js {
+  color: #f0db4f;
+}
+
+.react {
+  color: #00d8ff;
+}
+
+.html {
+  color: #e34c26;
+}
+
+.css {
+  color: #264de4;
 }

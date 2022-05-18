@@ -19,10 +19,6 @@ import {
   BsEnvelope,
 } from "react-icons/bs";
 
-import { IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
-
-import { SiReact, SiJavascript } from "react-icons/si";
-
 const PersonalInfo = function (props) {
   const printButton = useRef(null);
 
@@ -46,7 +42,23 @@ const PersonalInfo = function (props) {
         src={profilePic}
         alt="jacob williams profile"
       />
-      <Section title="Contact">
+      <Section>
+        <ul>
+          <li>
+            <BsGeo className={styles.icon} />
+            {`Kyiv, Ukraine`}
+          </li>
+          <li>
+            <BsCalendar className={styles.icon} />
+            {`6th May 1993`}
+          </li>
+          <li>
+            <BsHouse className={styles.icon} />
+            {`Stoke-On-Trent, UK`}
+          </li>
+        </ul>
+      </Section>
+      <Section title="Contact me">
         <ul>
           <li>
             <div className={styles.email}>
@@ -68,22 +80,7 @@ const PersonalInfo = function (props) {
           </li>
         </ul>
       </Section>
-      <Section title="Personal">
-        <ul>
-          <li>
-            <BsGeo className={styles.icon} />
-            {`Kyiv, Ukraine`}
-          </li>
-          <li>
-            <BsCalendar className={styles.icon} />
-            {`6th May 1993`}
-          </li>
-          <li>
-            <BsHouse className={styles.icon} />
-            {`Stoke-On-Trent, UK`}
-          </li>
-        </ul>
-      </Section>
+
       <Section title="On the web">
         <ul>
           <li>
@@ -107,40 +104,28 @@ const PersonalInfo = function (props) {
           </li>
         </ul>
       </Section>
-      <Section title="Skills">
-        <ul>
-          <li>
-            <SiJavascript className={`${styles.js} ${styles.icon}`} />
-            Javascript
-          </li>
-          <li>
-            <SiReact className={`${styles.react} ${styles.icon}`} />
-            React.Js
-          </li>
-          <li>
-            <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
-            CSS/SCSS
-          </li>
-          <li>
-            <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
-            HTML5
-          </li>
-        </ul>
-      </Section>
       <Section title="Former occupation">
-        <div className="bullet-grid">
+        <div className={`bullet-grid ${styles["former-occupation"]}`}>
           <p>👨‍🏫</p>
-          <p>
-            English language teacher - teaching English as a foreign language
-            (TEFL).
-          </p>
+          <div>
+            <p>
+              <b>English language teacher</b>
+            </p>
+            <ul>
+              <li>freelance tutor for Ukrainian professionals</li>
+              <li>classroom teacher at multiple sites in Kyiv</li>
+              <li>mentor for Polish professionals</li>
+            </ul>
+          </div>
           <p>📲</p>
-          <p>Contact coordinator for a charity organisation.</p>
+          <p>
+            <b>Contact coordinator</b> for a charity organisation.
+          </p>
         </div>
       </Section>
       <div className={styles["printer-button"]}>
         <button ref={printButton} onClick={printButtonClickHandler}>
-          Print
+          Save
         </button>
       </div>
     </Card>
