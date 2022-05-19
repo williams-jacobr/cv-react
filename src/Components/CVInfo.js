@@ -18,18 +18,17 @@ const CVInfo = function (props) {
           exciting company. Since getting my first taste of programming through
           HTML and Visual Basic at college, through to the use of MatLab and R
           at university, and onward to my current fascination in front-end
-          development now, I have been intrigued by the draw of programming for
-          12+ years.
+          development, I have been intrigued by the draw of programming for 12+
+          years.
           <br />
           <br />
-          Having cut back my hours as a teacher, and dedicated my free time to
-          udemy courses on Javascript, React, CSS, and even some full-stack
-          development, I am ready to make the difference at your company by
-          implementing my determination to achieve . Looking forward to working
-          with your company.
-          <br />
-          <br />- willpower and desire to achieve from teaching freelance -
-          capable mind from mathematician - real tangible skills now from udemy
+          Having cut back my hours as a self-made freelance EFL teacher to
+          dedicate 100s of hours to Udemy courses on Javascript, React, CSS, and
+          even some full-stack development, I am ready to make the difference at
+          your company by implementing my willpower and determination to
+          achieve. As a very capable mathematician and problem solver, with
+          real, tangible, front-end development skills, I am looking forward to
+          working with your company.
         </p>
       </Section>
       <Section title="◖Education">
