@@ -99,3 +99,18 @@
     padding: 1rem 1.5rem;
   }
 }
+
+@media (max-width: 910px) {
+  .personal-info-container {
+    background: #2b2741;
+  }
+
+  .expanding-skills,
+  .former-occupation,
+  .profile-image,
+  .profiles,
+  .contact-me,
+  .personal {
+    display: none;
+  }
+}

@@ -1,6 +1,7 @@
 import Card from "./UI/Card";
 import styles from "./PersonalInfo.module.css";
 import Section from "./UI/Section";
+import ExpandingMySkills from "./ExpandingMySkills";
 
 import domtoimage from "dom-to-image";
 import { saveAs } from "file-saver";
@@ -42,7 +43,7 @@ const PersonalInfo = function (props) {
         src={profilePic}
         alt="jacob williams profile"
       />
-      <Section>
+      <Section className={styles.personal}>
         <ul>
           <li>
             <BsGeo className={styles.icon} />
@@ -58,7 +59,7 @@ const PersonalInfo = function (props) {
           </li>
         </ul>
       </Section>
-      <Section title="Contact me">
+      <Section title="Contact me" className={styles['contact-me']}>
         <ul>
           <li>
             <div className={styles.email}>
@@ -81,7 +82,7 @@ const PersonalInfo = function (props) {
         </ul>
       </Section>
 
-      <Section title="On the web">
+      <Section title="On the web" className={styles.profiles}>
         <ul>
           <li>
             <a href="https://www.facebook.com/jacob.williams.33">
@@ -104,8 +105,15 @@ const PersonalInfo = function (props) {
           </li>
         </ul>
       </Section>
-      <Section title="Former occupation">
-        <div className={`bullet-grid ${styles["former-occupation"]}`}>
+      <ExpandingMySkills
+        title="Expanding my skills"
+        className={styles["expanding-skills"]}
+      />
+      <Section
+        title="Former occupation"
+        className={styles["former-occupation"]}
+      >
+        <div className="bullet-grid">
           <p>👨‍🏫</p>
           <div>
             <p>

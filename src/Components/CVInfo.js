@@ -9,6 +9,9 @@ import { IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
 
 import { SiReact, SiJavascript } from "react-icons/si";
 
+import { FaGitAlt } from "react-icons/fa";
+import ExpandingMySkills from "./ExpandingMySkills";
+
 const CVInfo = function (props) {
   return (
     <Card
@@ -50,46 +53,49 @@ const CVInfo = function (props) {
           <h5>Manchester, UK</h5>
         </div>
       </Section>
-      <div className={styles['side-by-side']}>
-      <Section title="◖Certificates">
-        <div className={styles.education}>
-          <h1>Javascript</h1>
-          <h2>The Complete Javascript Course</h2>
-          <h3>{}</h3>
+      <div className={styles["side-by-side"]}>
+        <Section title="◖Certificates">
+          <div className={styles.education}>
+            <h1>Javascript</h1>
+            <h2>The Complete Javascript Course</h2>
+            <h3>{}</h3>
 
-          <h4>July 2021</h4>
+            <h4>July 2021</h4>
 
-          <h1>Cascading Style Sheets (CSS)</h1>
-          <h2>CSS - The Complete Guide</h2>
-          <h3>{}</h3>
-          <h4>August 2021</h4>
+            <h1>Cascading Style Sheets (CSS)</h1>
+            <h2>CSS - The Complete Guide</h2>
+            <h3>{}</h3>
+            <h4>August 2021</h4>
 
-          <h1>MEAN Stack</h1>
-          <h2>Angular & NodeJS - The MEAN Stack Guide</h2>
-          <h3>{}</h3>
-          <h4>November 2021</h4>
-        </div>
-      </Section>
-      <Section title="◖Skills">
-      <ul>
-          <li>
-            <SiJavascript className={`${styles.js} ${styles.icon}`} />
-            Javascript
-          </li>
-          <li>
-            <SiReact className={`${styles.react} ${styles.icon}`} />
-            React.Js
-          </li>
-          <li>
-            <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
-            CSS/SCSS
-          </li>
-          <li>
-            <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
-            HTML5
-          </li>
-        </ul>
-      </Section>
+            <h1>MEAN Stack</h1>
+            <h2>Angular & NodeJS - The MEAN Stack Guide</h2>
+            <h3>{}</h3>
+            <h4>November 2021</h4>
+          </div>
+        </Section>
+        <Section title="◖Skills">
+          <ul>
+            <li>
+              <SiJavascript className={`${styles.js} ${styles.icon}`} />
+              Javascript
+            </li>
+            <li>
+              <SiReact className={`${styles.react} ${styles.icon}`} />
+              React.Js
+            </li>
+            <li>
+              <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
+              CSS/SCSS
+            </li>
+            <li>
+              <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
+              HTML5
+            </li>
+            <li>
+              <FaGitAlt /> Git
+            </li>
+          </ul>
+        </Section>
       </div>
       <Section title="◖Projects">
         <Subsection
@@ -167,35 +173,10 @@ const CVInfo = function (props) {
           </div>
         </Subsection>
       </Section>
-      <Section title="◖Expanding my skills" className={styles.skills}>
-        <div className="bullet-grid">
-          <BsGraphUp className={styles.graph} />
-          <p>
-            Becoming well acquainted with essential JS libraries, especially
-            React and Redux.
-          </p>
-          <BsGraphUp className={styles.graph} />
-          <p>
-            Working on real world projects with medium to large size user bases
-          </p>
-          <BsGraphUp className={styles.graph} />
-          <p>
-            Exploring further libraries that can push me to the next level,
-            including Next.js and Node.js
-          </p>
-          <BsGraphUp className={styles.graph} />
-          <p>Familiarising myself with JS frameworks such as Angular or Vue</p>
-          <BsGraphUp className={styles.graph} />
-          <p>Familiarising myself with Node frameworks such as Express.js</p>
-          <BsGraphUp className={styles.graph} />
-          <p>
-            Becoming better acquainted with database management such as a deeper
-            dive into PostgreSQL or equivalents
-          </p>
-          <BsGraphUp className={styles.graph} />
-          <p>Compining the above to expand into full-stack development</p>
-        </div>
-      </Section>
+      <ExpandingMySkills
+        title="◖Expanding my skills"
+        className={styles["expanding-skills"]}
+      />
     </Card>
   );
 };

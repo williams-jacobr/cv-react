@@ -126,16 +126,6 @@
   padding-right: 1rem;
 }
 
-.graph {
-  color: #e34c26;
-  font-size: x-small;
-}
-
-.skills p {
-  margin: 0;
-  padding: 0;
-}
-
 @media (min-width: 1200px) {
   .cv-info-container {
     padding: 1rem 3rem 1rem 2rem;
@@ -163,20 +153,27 @@
   }
 }
 
-@media (max-width: 900px) {
-  .education {
-    grid-auto-flow: row;
-  }
-
-  .education h3 {
-    grid-column: 1;
-  }
-}
-
 @media (max-width: 810px) {
   .education {
     display: flex;
     flex-direction: column;
+  }
+
+  .expanding-skills {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .side-by-side {
+    flex-direction: column;
+    column-gap: 0;
+  }
+}
+
+@media (min-width: 910px) {
+  .expanding-skills {
+    display: none;
   }
 }
 
