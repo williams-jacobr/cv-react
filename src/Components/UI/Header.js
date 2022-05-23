@@ -19,23 +19,21 @@ const Header = function (props) {
       <ul className={styles.contacts}>
         <li>
           <p>
-            <BsGeo className={personalStyles.icon} />
+            <BsGeo className={styles.icon} />
             Kyiv
           </p>
         </li>
         <li>
-          <div>
-            <a href="mailto:williams.jacobr@gmail.com">
-              <p>
-                <BsEnvelope className={personalStyles.icon} />
-                williams.jacobr@gmail.com
-              </p>
-            </a>
-          </div>
+          <a href="mailto:williams.jacobr@gmail.com">
+            <div className={personalStyles["container"]}>
+              <BsEnvelope className={styles.icon} />
+              <p>williams.jacobr@gmail.com</p>
+            </div>
+          </a>
         </li>
         <li>
-          <div className={personalStyles["phone-container"]}>
-            <BsTelephone className={personalStyles.icon} />
+          <div className={personalStyles["container"]}>
+            <BsTelephone className={styles.icon} />
             <div className={personalStyles["phone-numbers"]}>
               <p>UA:+380635583568</p>
               <p>UK:+447701020162</p>

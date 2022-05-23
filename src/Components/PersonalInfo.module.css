@@ -8,7 +8,9 @@
 
   margin: 0;
   border-radius: 0;
+}
 
+.personal-info-flex-container {
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +48,7 @@
   white-space: nowrap;
 }
 
-.phone-container {
+.container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -58,17 +60,25 @@
   line-height: 1.1rem;
 }
 
-.former-occupation {
+.former-occupation-print {
+  padding: 0 1rem;
+  display: none;
+}
+
+.former-occupation,
+.former-occupation-print {
   font-size: 0.9rem;
 }
 
-.former-occupation ul {
+.former-occupation ul,
+.former-occupation-print ul {
   list-style: "- ";
   list-style-position: inside;
   margin: 0.3rem 0;
 }
 
-.former-occupation b {
+.former-occupation b,
+.former-occupation-print b {
   font-size: 1rem;
 }
 
@@ -100,7 +110,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media only screen and (max-width: 910px) {
   .personal-info-container {
     background: #2b2741;
   }
@@ -112,5 +122,17 @@
   .contact-me,
   .personal {
     display: none;
+  }
+}
+
+@media only print {
+  .personal-info-container {
+    height: 653mm;
+  }
+
+  .former-occupation-print {
+    display: block;
+    page-break-before: always;
+    margin-top: 2.2rem;
   }
 }

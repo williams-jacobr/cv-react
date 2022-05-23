@@ -21,7 +21,46 @@ code {
   margin-top: 0.3rem;
 }
 
+.bullet-grid div {
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
 h2,
 p {
   margin: 0;
+}
+
+/* .print {
+  display: none;
+} */
+
+@media print {
+  html,
+  body,
+  .container {
+    height: 100%;
+    width: 210mm;
+    overflow: initial !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .page-break {
+    margin-top: 2rem;
+    page-break-before: always;
+  }
+
+  .no-print {
+    display: none;
+  }
+
+  .print {
+    display: initial;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
 }

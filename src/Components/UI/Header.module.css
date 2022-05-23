@@ -40,6 +40,10 @@
   font-size: 1.5rem;
 }
 
+.icon {
+  margin: 0 0.2rem 0 0;
+}
+
 @media (min-width: 1200px) {
   .header {
     padding: 1rem 2rem;
@@ -54,7 +58,7 @@
   }
 }
 
-@media (max-width: 910px) {
+@media only screen and (max-width: 910px) {
   .header {
     box-shadow: 0 0 0 0.75rem #8febd5;
   }
@@ -73,9 +77,13 @@
   .contacts {
     font-size: 1.1rem;
   }
+
+  .icon {
+    margin: 0 0.5rem 0 0;
+  }
 }
 
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .contacts {
     font-size: 0.7rem;
   }
@@ -86,5 +94,14 @@
     justify-self: end;
     align-self: center;
     font-size: 1rem;
+  }
+}
+
+@media print {
+  .header {
+    display: block;
+  }
+  .header ul {
+    display: none;
   }
 }

@@ -3,13 +3,12 @@ import styles from "./CVInfo.module.css";
 import Section from "./UI/Section";
 import Subsection from "./UI/Subsection";
 
-import { BsGithub, BsGraphUp } from "react-icons/bs";
-
+import { BsGithub } from "react-icons/bs";
 import { IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
-
 import { SiReact, SiJavascript } from "react-icons/si";
-
 import { FaGitAlt } from "react-icons/fa";
+import { RiShareBoxLine } from "react-icons/ri";
+
 import ExpandingMySkills from "./ExpandingMySkills";
 
 const CVInfo = function (props) {
@@ -38,66 +37,81 @@ const CVInfo = function (props) {
           working with your company.
         </p>
       </Section>
+
       <Section title="◖Education">
-        <div className={styles.education}>
-          <h1>MMATH Masters in Mathematics</h1>
-          <h2>First Class Degree</h2>
+        <div className={styles["side-by-side"]}>
+          <div className={styles.education}>
+            <h1>MMATH Masters in Mathematics</h1>
+            <h2>First Class Degree</h2>
+          </div>
+          <div className={styles.education}>
+            <h3>
+              <a href="https://www.maths.manchester.ac.uk/">
+                University of Manchester
+              </a>
+            </h3>
 
-          <h3>
-            <a href="https://www.maths.manchester.ac.uk/">
-              University of Manchester
-            </a>
-          </h3>
+            <h4>September 2011 - August 2015</h4>
+            <h5>Manchester, UK</h5>
+          </div>
 
-          <h4>September 2011 - August 2015</h4>
-          <h5>Manchester, UK</h5>
+          <Section title="◖Certificates">
+            <div className={styles.certificates}>
+              <a
+                className={styles.link}
+                href="https://www.udemy.com/certificate/UC-cf587098-c2d0-4d21-b521-6b7ed4e3242f/"
+              >
+                <h1>Javascript</h1>
+                <RiShareBoxLine className={styles.super} />
+              </a>
+              <h2>The Complete Javascript Course</h2>
+
+              <a
+                className={styles.link}
+                href="https://www.udemy.com/certificate/UC-08e7f12a-7901-47c3-96b3-dfd33ecea29f/"
+              >
+                <h1>Cascading Style Sheets (CSS)</h1>
+                <RiShareBoxLine className={styles.super} />
+              </a>
+              <h2>CSS - The Complete Guide</h2>
+
+              <a
+                className={styles.link}
+                href="https://www.udemy.com/certificate/UC-d5e5e29d-8eba-43a3-b66b-edf6001589e5/"
+              >
+                <h1>MEAN Stack</h1>
+                <RiShareBoxLine className={styles.super} />
+              </a>
+              <h2>Angular & NodeJS - The MEAN Stack Guide</h2>
+            </div>
+          </Section>
+          <Section title="◖Skills" className={styles.skills}>
+            <ul>
+              <li>
+                <SiJavascript className={`${styles.js} ${styles.icon}`} />
+                Javascript
+              </li>
+              <li>
+                <SiReact className={`${styles.react} ${styles.icon}`} />
+                React.Js
+              </li>
+              <li>
+                <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
+                CSS/SCSS
+              </li>
+              <li>
+                <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
+                HTML5
+              </li>
+              <li>
+                <FaGitAlt /> Git
+              </li>
+            </ul>
+          </Section>
         </div>
       </Section>
-      <div className={styles["side-by-side"]}>
-        <Section title="◖Certificates">
-          <div className={styles.education}>
-            <h1>Javascript</h1>
-            <h2>The Complete Javascript Course</h2>
-            <h3>{}</h3>
 
-            <h4>July 2021</h4>
-
-            <h1>Cascading Style Sheets (CSS)</h1>
-            <h2>CSS - The Complete Guide</h2>
-            <h3>{}</h3>
-            <h4>August 2021</h4>
-
-            <h1>MEAN Stack</h1>
-            <h2>Angular & NodeJS - The MEAN Stack Guide</h2>
-            <h3>{}</h3>
-            <h4>November 2021</h4>
-          </div>
-        </Section>
-        <Section title="◖Skills">
-          <ul>
-            <li>
-              <SiJavascript className={`${styles.js} ${styles.icon}`} />
-              Javascript
-            </li>
-            <li>
-              <SiReact className={`${styles.react} ${styles.icon}`} />
-              React.Js
-            </li>
-            <li>
-              <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
-              CSS/SCSS
-            </li>
-            <li>
-              <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
-              HTML5
-            </li>
-            <li>
-              <FaGitAlt /> Git
-            </li>
-          </ul>
-        </Section>
-      </div>
-      <Section title="◖Projects">
+      <Section title="◖Projects" className="page-break">
         <Subsection
           title="Great Quotes"
           to="https://react-http-bf455.web.app/quotes"

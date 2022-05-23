@@ -2,7 +2,7 @@ import styles from "./App.module.css";
 import Card from "./Components/UI/Card";
 import CVInfo from "./Components/CVInfo";
 import PersonalInfo from "./Components/PersonalInfo";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Header from "./Components/UI/Header";
 
 function App() {
