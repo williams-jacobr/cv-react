@@ -2,9 +2,6 @@ import Card from "./UI/Card";
 import styles from "./PersonalInfo.module.css";
 import Section from "./UI/Section";
 import ExpandingMySkills from "./ExpandingMySkills";
-
-import domtoimage from "dom-to-image";
-import { saveAs } from "file-saver";
 import { useReactToPrint } from "react-to-print";
 
 import profilePic from "../img/profile.jpg";
@@ -23,16 +20,6 @@ import {
 
 const PersonalInfo = function (props) {
   const printButton = useRef(null);
-
-  // const printButtonClickHandler = async function () {
-  //   const node = props.printContainer.current;
-
-  //   const img = await domtoimage.toBlob(node, {
-  //     filter: (node) => node !== printButton.current,
-  //   });
-
-  //   saveAs(img, "Jacob_Williams_CV.png");
-  // };
 
   const printButtonClickHandler = useReactToPrint({
     content: () => {
