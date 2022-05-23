@@ -11,7 +11,8 @@ const Subsection = function (props) {
           <h2>{title}</h2> <RiShareBoxLine className={styles.super} />
         </a>
       )}
-      {!to && <h2>{title}</h2>} {props.children}
+      {!to && <h2>{title}</h2>}
+      {props.children}
     </div>
   );
 };

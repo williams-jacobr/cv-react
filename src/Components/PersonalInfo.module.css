@@ -4,17 +4,20 @@
 
   background-image: linear-gradient(#2b2741 80%, #2b2741c4);
   box-shadow: 0 0 0 0.75rem #8febd5;
-  color: #8febd5;
+  color: white;
 
   margin: 0;
   border-radius: 0;
+}
 
+.personal-info-flex-container {
   display: flex;
   flex-direction: column;
 }
 
 .personal-info-container h2 {
   font-weight: 900;
+  color: #8febd5;
 }
 
 .personal-info-container ul {
@@ -45,7 +48,7 @@
   white-space: nowrap;
 }
 
-.phone-container {
+.container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -55,6 +58,28 @@
 .phone-numbers p {
   display: block;
   line-height: 1.1rem;
+}
+
+.former-occupation-print {
+  padding: 0 1rem;
+  display: none;
+}
+
+.former-occupation,
+.former-occupation-print {
+  font-size: 0.9rem;
+}
+
+.former-occupation ul,
+.former-occupation-print ul {
+  list-style: "- ";
+  list-style-position: inside;
+  margin: 0.3rem 0;
+}
+
+.former-occupation b,
+.former-occupation-print b {
+  font-size: 1rem;
 }
 
 .printer-button {
@@ -79,24 +104,35 @@
   color: #2b2741;
 }
 
-.js {
-  color: #f0db4f;
-}
-
-.react {
-  color: #00d8ff;
-}
-
-.html {
-  color: #e34c26;
-}
-
-.css {
-  color: #264de4;
-}
-
 @media (min-width: 1200px) {
   .personal-info-container {
     padding: 1rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .personal-info-container {
+    background: #2b2741;
+  }
+
+  .expanding-skills,
+  .former-occupation,
+  .profile-image,
+  .profiles,
+  .contact-me,
+  .personal {
+    display: none;
+  }
+}
+
+@media only print {
+  .personal-info-container {
+    height: 653mm;
+  }
+
+  .former-occupation-print {
+    display: block;
+    page-break-before: always;
+    margin-top: 2.2rem;
   }
 }

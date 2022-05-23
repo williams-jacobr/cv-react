@@ -3,18 +3,16 @@
 }
 
 .subsection h2 {
-  line-height: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
-.subsection p {
-  vertical-align: text-bottom;
-}
-
-a.link {
+a.link,
+a.link h2 {
   text-decoration: none;
 }
 
-a.link:hover {
+a.link:hover h2 {
   text-decoration: underline;
 }
 
@@ -22,4 +20,10 @@ a.link:hover {
   font-size: small;
   vertical-align: super;
   text-decoration: none;
+}
+
+@media print {
+  .super {
+    display: none;
+  }
 }

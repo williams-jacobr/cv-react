@@ -38,11 +38,27 @@ a {
   overflow: hidden;
 }
 
+.section {
+  padding: 0rem 1rem;
+  margin: 1rem 0;
+}
+
 .container {
   display: flex;
 }
 
-.section {
-  padding: 0rem 1rem;
-  margin: 1rem 0;
+@media only screen and (max-width: 910px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  .container {
+    height: initial !important;
+    width: 210mm !important;
+    overflow: initial !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
 }
