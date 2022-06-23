@@ -20,10 +20,10 @@ const CVInfo = function (props) {
       <Section className={styles.profile}>
         <p>
           A driven and ambituous mathematician with a keen interest in
-          programming seeking to apply for a front-end developer position in an
-          exciting company. Since getting my first taste of programming through
-          HTML and Visual Basic at college, through to the use of MatLab and R
-          at university, and onward to my current fascination in front-end
+          programming seeking to apply for a Junior Frontend Developer position
+          in an exciting company. Since getting my first taste of programming
+          through HTML and Visual Basic at college, through to the use of MatLab
+          and R at university, and onward to my current fascination in front-end
           development, I have been intrigued by the draw of programming for 12+
           years.
           <br />
@@ -31,10 +31,10 @@ const CVInfo = function (props) {
           Having cut back my hours as a self-made freelance EFL teacher to
           dedicate 100s of hours to Udemy courses on Javascript, React, CSS, and
           even some full-stack development, I am ready to make the difference at
-          your company by implementing my willpower and determination to
-          achieve. As a very capable mathematician and problem solver, with
-          real, tangible, front-end development skills, I am looking forward to
-          working with your company.
+          your company by implementing my willpower and determination to achieve. As a
+          very capable mathematician and problem solver, with real, tangible,
+          front-end development skills, I am looking forward to discussing
+          routes forward to benefit both parties.
         </p>
       </Section>
 
@@ -89,22 +89,18 @@ const CVInfo = function (props) {
             <ul>
               <li>
                 <SiJavascript className={`${styles.js} ${styles.icon}`} />
-                Javascript
               </li>
               <li>
                 <SiReact className={`${styles.react} ${styles.icon}`} />
-                React.Js
+              </li>
+              <li>
+                <FaGitAlt />
               </li>
               <li>
                 <IoLogoCss3 className={`${styles.css} ${styles.icon}`} />
-                CSS/SCSS
               </li>
               <li>
                 <IoLogoHtml5 className={`${styles.html} ${styles.icon}`} />
-                HTML5
-              </li>
-              <li>
-                <FaGitAlt /> Git
               </li>
             </ul>
           </Section>

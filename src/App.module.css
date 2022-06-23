@@ -55,7 +55,7 @@ a {
 
 @media print {
   .container {
-    height: initial !important;
+    height: 594mm !important;
     width: 210mm !important;
     overflow: initial !important;
     print-color-adjust: exact;

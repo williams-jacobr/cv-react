@@ -130,11 +130,15 @@
 
 @media only print {
   .personal-info-container {
-    height: 653mm;
+    height: 1000mm;
   }
 
   .personal-info-flex-container {
     height: auto;
+  }
+
+  .contact-me {
+    margin-top: 6rem;
   }
 
   .former-occupation-print {

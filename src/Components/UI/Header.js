@@ -13,7 +13,9 @@ const Header = function (props) {
   return (
     <header className={styles.header}>
       <div>
-        <h1>Jacob Williams</h1>
+        <a href="https://jacob-williams-cv.netlify.app/">
+          <h1>Jacob Williams</h1>
+        </a>
         <h2>Front-end Developer</h2>
       </div>
       <ul className={styles.contacts}>

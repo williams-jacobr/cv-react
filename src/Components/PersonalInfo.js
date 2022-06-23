@@ -42,7 +42,7 @@ const PersonalInfo = function (props) {
           <ul>
             <li>
               <BsGeo className={styles.icon} />
-              {`Kyiv, Ukraine`}
+              {`Newcastle-Under-Lyme`}
             </li>
             <li>
               <BsCalendar className={styles.icon} />
