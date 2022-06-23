@@ -5,3 +5,5 @@ A website for potential employers to look at to check out my CV. The website is 
 This project makes use of ReactJs to write the website in a component way and be able to easily compile and build the application since the source code will need constant updates as my career develops. It was also the first look at using CSS away from just screens and also focusing on how media queries can be used for other things but especially the @print media query.
 
 <b>Take a look 😊 - </b> <a href="https://jacob-williams-cv.netlify.app/">https://jacob-williams-cv.netlify.app/</a>
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
