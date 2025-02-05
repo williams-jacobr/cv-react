@@ -22,7 +22,7 @@ const PersonalInfo = function ({printContainer, className}) {
   const printButtonClickHandler = useReactToPrint({content: () => printContainer.current});
 
   return (
-    <Card ref={null} className={styles["personal-info-container"]}>
+    <Card className={styles["personal-info-container"]}>
       <div
         className={`${styles["personal-info-flex-container"]} ${className}`}
       >

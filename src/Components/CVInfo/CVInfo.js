@@ -11,10 +11,7 @@ import ExpandingMySkills from "../ExpandingMySkills/ExpandingMySkills";
 
 const CVInfo = function ({className}) {
   return (
-    <Card
-      ref={null}
-      className={`${styles["cv-info-container"]} ${className}`}
-    >
+    <Card className={`${styles["cv-info-container"]} ${className}`}>
       <Section className={styles.profile}>
         <p>
           A driven and ambituous mathematician with a keen interest in
@@ -36,7 +33,7 @@ const CVInfo = function ({className}) {
         </p>
       </Section>
 
-      <Section title="◖Education">
+      <Section title="Education">
         <div className={styles["side-by-side"]}>
           <div className={styles.education}>
             <h1>MMATH Masters in Mathematics</h1>
@@ -53,7 +50,7 @@ const CVInfo = function ({className}) {
             <h5>Manchester, UK</h5>
           </div>
 
-          <Section title="◖Certificates">
+          <Section title="Certificates">
             <div className={styles.certificates}>
               <a
                 className={styles.link}
@@ -83,7 +80,7 @@ const CVInfo = function ({className}) {
               <h2>Angular & NodeJS - The MEAN Stack Guide</h2>
             </div>
           </Section>
-          <Section title="◖Skills" className={styles.skills}>
+          <Section title="Skills" className={styles.skills}>
             <ul>
               <li>
                 <SiJavascript className={`${styles.js} ${styles.icon}`} />
@@ -105,7 +102,7 @@ const CVInfo = function ({className}) {
         </div>
       </Section>
 
-      <Section title="◖Projects" className="page-break">
+      <Section title="Projects" className="page-break">
         <Subsection
           title="Great Quotes"
           to="https://react-http-bf455.web.app/quotes"
@@ -182,7 +179,7 @@ const CVInfo = function ({className}) {
         </Subsection>
       </Section>
       <ExpandingMySkills
-        title="◖Expanding my skills"
+        title="Expanding my skills"
         className={styles["expanding-skills"]}
       />
     </Card>

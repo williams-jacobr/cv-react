@@ -8,9 +8,10 @@
 
 .cv-info-container h2 {
   background-color: #2b2741;
+  width: 100%;
   color: #8febd5;
   margin: 0.5rem 0;
-  padding: 0.1rem 3rem 0.1rem 0.5rem;
+  padding: 0.2rem 3rem 0.2rem 1rem;
   display: inline-block;
   border-radius: 0 0.5rem 0 0.5rem;
 
@@ -30,6 +31,7 @@
 }
 
 .subsection h2 {
+  width: auto;
   color: #2b2741;
   background-color: transparent;
   padding: 0;
