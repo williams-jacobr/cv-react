@@ -1,13 +1,13 @@
 import styles from "./ExpandingMySkills.module.css";
 
-import Section from "./UI/Section";
+import Section from "../UI/Section/Section";
 import { BsGraphUp } from "react-icons/bs";
 
-const ExpandingMySkills = function (props) {
+const ExpandingMySkills = function ({title, className}) {
   return (
     <Section
-      title={props.title}
-      className={`${styles.skills} ${props.className}`}
+      title={title}
+      className={`${styles.skills} ${className}`}
     >
       <div className="bullet-grid">
         <BsGraphUp className={styles.graph} />

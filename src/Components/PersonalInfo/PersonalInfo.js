@@ -1,11 +1,10 @@
-import Card from "./UI/Card";
+import Card from "../UI/Card/Card";
 import styles from "./PersonalInfo.module.css";
-import Section from "./UI/Section";
-import ExpandingMySkills from "./ExpandingMySkills";
-import { useReactToPrint } from "react-to-print";
-
+import Section from "../UI/Section/Section";
+import ExpandingMySkills from "../ExpandingMySkills/ExpandingMySkills";
+import {useReactToPrint} from "react-to-print";
 import profilePic from "../img/profile.jpg";
-import { useRef } from "react";
+import {useRef} from "react";
 
 import {
   BsGithub,
@@ -18,20 +17,14 @@ import {
   BsEnvelope,
 } from "react-icons/bs";
 
-const PersonalInfo = function (props) {
+const PersonalInfo = function ({printContainer, className}) {
   const printButton = useRef(null);
-
-  const printButtonClickHandler = useReactToPrint({
-    content: () => {
-      console.log(props.printContainer.current);
-      return props.printContainer.current;
-    },
-  });
+  const printButtonClickHandler = useReactToPrint({content: () => printContainer.current});
 
   return (
     <Card ref={null} className={styles["personal-info-container"]}>
       <div
-        className={`${styles["personal-info-flex-container"]} ${props.className}`}
+        className={`${styles["personal-info-flex-container"]} ${className}`}
       >
         <img
           className={styles["profile-image"]}

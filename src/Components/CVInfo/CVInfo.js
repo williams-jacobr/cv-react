@@ -1,21 +1,19 @@
-import Card from "./UI/Card";
+import Card from "../UI/Card/Card";
 import styles from "./CVInfo.module.css";
-import Section from "./UI/Section";
-import Subsection from "./UI/Subsection";
+import Section from "../UI/Section/Section";
+import Subsection from "../UI/Subsection/Subsection";
+import {BsGithub} from "react-icons/bs";
+import {IoLogoCss3, IoLogoHtml5} from "react-icons/io";
+import {SiReact, SiJavascript} from "react-icons/si";
+import {FaGitAlt} from "react-icons/fa";
+import {RiShareBoxLine} from "react-icons/ri";
+import ExpandingMySkills from "../ExpandingMySkills/ExpandingMySkills";
 
-import { BsGithub } from "react-icons/bs";
-import { IoLogoCss3, IoLogoHtml5 } from "react-icons/io";
-import { SiReact, SiJavascript } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
-import { RiShareBoxLine } from "react-icons/ri";
-
-import ExpandingMySkills from "./ExpandingMySkills";
-
-const CVInfo = function (props) {
+const CVInfo = function ({className}) {
   return (
     <Card
       ref={null}
-      className={`${styles["cv-info-container"]} ${props.className}`}
+      className={`${styles["cv-info-container"]} ${className}`}
     >
       <Section className={styles.profile}>
         <p>

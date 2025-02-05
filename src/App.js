@@ -1,9 +1,9 @@
 import styles from "./App.module.css";
-import Card from "./Components/UI/Card";
-import CVInfo from "./Components/CVInfo";
-import PersonalInfo from "./Components/PersonalInfo";
+import Card from "./Components/UI/Card/Card";
+import CVInfo from "./Components/CVInfo/CVInfo";
+import PersonalInfo from "./Components/PersonalInfo/PersonalInfo";
 import { useRef } from "react";
-import Header from "./Components/UI/Header";
+import Header from "./Components/UI/Header/Header";
 
 function App() {
   const appContainer = useRef(null);
@@ -15,10 +15,7 @@ function App() {
           <Header />
           <CVInfo className={styles.section} />
         </div>
-        <PersonalInfo
-          className={styles.section}
-          printContainer={appContainer}
-        />
+        <PersonalInfo className={styles.section} printContainer={appContainer} />
       </div>
     </Card>
   );

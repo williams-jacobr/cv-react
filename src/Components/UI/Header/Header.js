@@ -9,7 +9,7 @@ import {
   BsGeo,
 } from "react-icons/bs";
 
-const Header = function (props) {
+const Header = function () {
   return (
     <header className={styles.header}>
       <div>
