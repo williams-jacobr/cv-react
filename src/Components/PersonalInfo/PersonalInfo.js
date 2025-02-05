@@ -3,7 +3,7 @@ import styles from "./PersonalInfo.module.css";
 import Section from "../UI/Section/Section";
 import ExpandingMySkills from "../ExpandingMySkills/ExpandingMySkills";
 import {useReactToPrint} from "react-to-print";
-import profilePic from "../img/profile.jpg";
+import profilePic from "../../img/profile.jpg";
 import {useRef} from "react";
 
 import {
