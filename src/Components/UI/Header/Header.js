@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import personalStyles from "../PersonalInfo.module.css";
+import personalStyles from "../PersonalInfo/PersonalInfo.module.css";
 import {
   BsFacebook,
   BsLinkedin,
