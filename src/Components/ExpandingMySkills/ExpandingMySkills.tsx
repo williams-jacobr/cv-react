@@ -3,7 +3,7 @@ import styles from './ExpandingMySkills.module.css';
 import Section from '../UI/Section/Section';
 import {BsGraphUp} from 'react-icons/bs';
 
-const ExpandingMySkills = function ({title, className}) {
+const ExpandingMySkills = function ({title, className}: {title?: string; className?: string}) {
   return (
     <Section
       title={title}

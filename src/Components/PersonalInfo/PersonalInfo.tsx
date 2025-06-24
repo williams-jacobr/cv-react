@@ -1,3 +1,4 @@
+import {MouseEventHandler} from 'react';
 import Card from '../UI/Card/Card';
 import styles from './PersonalInfo.module.css';
 import Section from '../UI/Section/Section';
@@ -15,7 +16,7 @@ import {
   BsEnvelope,
 } from 'react-icons/bs';
 
-const PersonalInfo = function ({onPrint, className}) {
+const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler<HTMLButtonElement> | undefined, className?: string}) {
   return (
     <Card className={styles["personal-info-container"]}>
       <div

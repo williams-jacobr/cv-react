@@ -1,10 +1,11 @@
+import {ReactNode} from 'react';
 import styles from './Subsection.module.css';
 import {RiShareBoxLine} from 'react-icons/ri';
 
-const Subsection = function ({title, to, className, children}) {
+const Subsection = function ({title, to, className, children}: {title: string; to?: string; className?: string; children: ReactNode}) {
   return (
     <div className={`${className} ${styles.subsection}`}>
-      {to && (
+      {!!to && (
         <a href={to} className={styles.link}>
           <h2>{title}</h2> <RiShareBoxLine className={styles.super} />
         </a>
