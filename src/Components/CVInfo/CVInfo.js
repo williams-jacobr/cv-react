@@ -1,13 +1,13 @@
-import Card from "../UI/Card/Card";
-import styles from "./CVInfo.module.css";
-import Section from "../UI/Section/Section";
-import Subsection from "../UI/Subsection/Subsection";
-import {BsGithub} from "react-icons/bs";
-import {IoLogoCss3, IoLogoHtml5} from "react-icons/io";
-import {SiReact, SiJavascript} from "react-icons/si";
-import {FaGitAlt} from "react-icons/fa";
-import {RiShareBoxLine} from "react-icons/ri";
-import ExpandingMySkills from "../ExpandingMySkills/ExpandingMySkills";
+import Card from '../UI/Card/Card';
+import styles from './CVInfo.module.css';
+import Section from '../UI/Section/Section';
+import Subsection from '../UI/Subsection/Subsection';
+import {BsGithub} from 'react-icons/bs';
+import {IoLogoCss3, IoLogoHtml5} from 'react-icons/io';
+import {SiReact, SiJavascript} from 'react-icons/si';
+import {FaGitAlt} from 'react-icons/fa';
+import {RiShareBoxLine} from 'react-icons/ri';
+import ExpandingMySkills from '../ExpandingMySkills/ExpandingMySkills';
 
 const CVInfo = function ({className}) {
   return (

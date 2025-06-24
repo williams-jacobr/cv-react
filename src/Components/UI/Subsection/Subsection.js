@@ -1,5 +1,5 @@
-import styles from "./Subsection.module.css";
-import { RiShareBoxLine } from "react-icons/ri";
+import styles from './Subsection.module.css';
+import {RiShareBoxLine} from 'react-icons/ri';
 
 const Subsection = function ({title, to, className, children}) {
   return (

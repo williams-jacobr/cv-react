@@ -1,10 +1,8 @@
-import Card from "../UI/Card/Card";
-import styles from "./PersonalInfo.module.css";
-import Section from "../UI/Section/Section";
-import ExpandingMySkills from "../ExpandingMySkills/ExpandingMySkills";
-import {useReactToPrint} from "react-to-print";
-import profilePic from "../../img/profile.jpg";
-import {useRef} from "react";
+import Card from '../UI/Card/Card';
+import styles from './PersonalInfo.module.css';
+import Section from '../UI/Section/Section';
+import ExpandingMySkills from '../ExpandingMySkills/ExpandingMySkills';
+import profilePic from '../../img/profile.jpg';
 
 import {
   BsGithub,
@@ -15,12 +13,9 @@ import {
   BsHouse,
   BsTelephone,
   BsEnvelope,
-} from "react-icons/bs";
+} from 'react-icons/bs';
 
-const PersonalInfo = function ({printContainer, className}) {
-  const printButton = useRef(null);
-  const printButtonClickHandler = useReactToPrint({content: () => printContainer.current});
-
+const PersonalInfo = function ({onPrint, className}) {
   return (
     <Card className={styles["personal-info-container"]}>
       <div
@@ -120,7 +115,7 @@ const PersonalInfo = function ({printContainer, className}) {
           </div>
         </Section>
         <div className={`no-print ${styles["printer-button"]}`}>
-          <button ref={printButton} onClick={printButtonClickHandler}>
+          <button onClick={onPrint}>
             Save
           </button>
         </div>

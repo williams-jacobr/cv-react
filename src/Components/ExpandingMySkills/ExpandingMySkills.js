@@ -1,7 +1,7 @@
-import styles from "./ExpandingMySkills.module.css";
+import styles from './ExpandingMySkills.module.css';
 
-import Section from "../UI/Section/Section";
-import { BsGraphUp } from "react-icons/bs";
+import Section from '../UI/Section/Section';
+import {BsGraphUp} from 'react-icons/bs';
 
 const ExpandingMySkills = function ({title, className}) {
   return (
