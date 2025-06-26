@@ -9,6 +9,9 @@ import {FaGitAlt} from 'react-icons/fa';
 import {RiShareBoxLine} from 'react-icons/ri';
 import ExpandingMySkills from '../ExpandingMySkills/ExpandingMySkills';
 
+console.log('styles["cv-info-container"]', styles["cv-info-container"]);
+console.log('styles', styles);
+
 const CVInfo = function ({className}: {className?: string}) {
   return (
     <Card className={`${styles["cv-info-container"]} ${className}`}>

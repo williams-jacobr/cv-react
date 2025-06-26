@@ -6,6 +6,8 @@ import {useRef} from 'react';
 import Header from './Components/UI/Header/Header';
 import {useReactToPrint} from 'react-to-print';
 
+console.log('styles.section', styles.section);
+
 function App() {
   const appContainer = useRef(null);
   const onPrint = useReactToPrint({contentRef: appContainer});
