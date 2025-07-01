@@ -1,11 +1,13 @@
 import path from 'path';
 import {fileURLToPath} from 'url';
 import {Configuration as WebpackConfiguration} from 'webpack';
+import Dotenv from 'dotenv-webpack';
 import {Configuration as WebpackDevServerConfiguration} from 'webpack-dev-server';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
 const __dirname = path.dirname(__filename); // get the name of the directory
+console.log('process', process);
 
 interface Configuration extends WebpackConfiguration {
   devServer?: WebpackDevServerConfiguration;
@@ -47,6 +49,7 @@ export default {
     extensions: ['.tsx', '.ts', '.js'],
   },
   plugins: [
+    new Dotenv({path: './.env.local', safe: true}),
     new HtmlWebpackPlugin({template: 'src/index.html'}),
   ],
   devtool: 'inline-source-map',

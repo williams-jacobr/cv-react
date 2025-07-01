@@ -1,0 +1,15 @@
+.year {
+  display: flex;
+  gap: 2px;
+  border: 1 solid black;
+}
+
+.week {
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
+}
+
+.date {
+  border: 1 black solid;
+}

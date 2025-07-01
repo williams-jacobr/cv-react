@@ -43,7 +43,7 @@ const Header = function () {
           </div>
         </li>
       </ul>
-      <ul className={styles["social-media"]}>
+      <ul className={styles['social-media']}>
         <li>
           <a href="https://www.facebook.com/jacob.williams.33">
             <BsFacebook />

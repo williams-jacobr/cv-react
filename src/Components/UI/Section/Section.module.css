@@ -1,5 +1,22 @@
+.section {
+  width: 100%;
+  display: inline-block;
+}
+
 .section > h2 {
   margin: 1rem 0 0.5rem 0;
+}
+
+.section-flex-base-33 {
+  width: 33%;
+}
+
+.section-flex-base-50 {
+  width: 33%;
+}
+
+.section-flex-base-66 {
+  width: 66%
 }
 
 @media print {

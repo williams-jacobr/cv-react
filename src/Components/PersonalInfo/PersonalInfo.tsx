@@ -4,6 +4,7 @@ import styles from './PersonalInfo.module.css';
 import Section from '../UI/Section/Section';
 import ExpandingMySkills from '../ExpandingMySkills/ExpandingMySkills';
 import profilePic from '../../img/profile.jpg';
+import { useParseClassname } from '../../Hooks/ParseClassname';
 
 import {
   BsGithub,
@@ -17,13 +18,13 @@ import {
 } from 'react-icons/bs';
 
 const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler<HTMLButtonElement> | undefined, className?: string}) {
+  const classNames = useParseClassname(styles['personal-info-flex-container'], className);
+
   return (
-    <Card className={styles["personal-info-container"]}>
-      <div
-        className={`${styles["personal-info-flex-container"]} ${className}`}
-      >
+    <Card className={styles['personal-info-container']}>
+      <div className={classNames}>
         <img
-          className={styles["profile-image"]}
+          className={styles['profile-image']}
           src={profilePic}
           alt="jacob williams profile"
         />
@@ -43,7 +44,7 @@ const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler
             </li>
           </ul>
         </Section>
-        <Section title="Contact me" className={styles["contact-me"]}>
+        <Section title="Contact me" className={styles['contact-me']}>
           <ul>
             <li>
               <div className={styles.email}>
@@ -55,9 +56,9 @@ const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler
             </li>
 
             <li>
-              <div className={styles["container"]}>
+              <div className={styles.container}>
                 <BsTelephone className={styles.icon} />
-                <div className={styles["phone-numbers"]}>
+                <div className={styles['phone-numbers']}>
                   <p>UA:+380635583568</p>
                   <p>UK:+447701020162</p>
                 </div>
@@ -91,11 +92,11 @@ const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler
         </Section>
         <ExpandingMySkills
           title="Expanding my skills"
-          className={styles["expanding-skills"]}
+          className={styles['expanding-skills']}
         />
         <Section
           title="Former occupation"
-          className={`no-print ${styles["former-occupation"]}`}
+          className={`no-print ${styles['former-occupation']}`}
         >
           <div className="bullet-grid">
             <p>👨‍🏫</p>
@@ -115,7 +116,7 @@ const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler
             </p>
           </div>
         </Section>
-        <div className={`no-print ${styles["printer-button"]}`}>
+        <div className={`no-print ${styles['printer-button']}`}>
           <button onClick={onPrint}>
             Save
           </button>
@@ -123,7 +124,7 @@ const PersonalInfo = function ({onPrint, className}: {onPrint: MouseEventHandler
       </div>
       <Section
         title="Former occupation"
-        className={styles["former-occupation-print"]}
+        className={styles['former-occupation-print']}
       >
         <div className="bullet-grid">
           <p>👨‍🏫</p>

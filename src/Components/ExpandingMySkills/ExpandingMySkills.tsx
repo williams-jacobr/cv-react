@@ -1,14 +1,13 @@
 import styles from './ExpandingMySkills.module.css';
-
 import Section from '../UI/Section/Section';
+import {useParseClassname} from '../../Hooks/ParseClassname';
 import {BsGraphUp} from 'react-icons/bs';
 
 const ExpandingMySkills = function ({title, className}: {title?: string; className?: string}) {
+  const classNames = useParseClassname(styles.skills, className);
+
   return (
-    <Section
-      title={title}
-      className={`${styles.skills} ${className}`}
-    >
+    <Section title={title} className={classNames}>
       <div className="bullet-grid">
         <BsGraphUp className={styles.graph} />
         <p>
