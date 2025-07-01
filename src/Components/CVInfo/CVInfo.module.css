@@ -43,7 +43,7 @@
 }
 
 .side-by-side {
-  display: grid;
+  display: flex;
   grid-template-columns: auto max-content;
   align-items: baseline;
   gap: 0.5rem;
@@ -134,22 +134,34 @@ a.link:hover h1 {
   text-decoration: none;
 }
 
-.skills ul {
+.skills-list {
   margin: 0;
   padding: 0;
-  width: 17.5rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.skills ul li {
+.skills-list-item {
   display: inline;
-  font-size: 3rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
-@media (min-width: 1200px) {
+.expanding-skills {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .expanding-skills {
+    display: none;
+  }
+
+  .profile p {
+    padding-top: 0;
+  }
+
   .cv-info-container {
     padding: 1rem 3rem 1rem 2rem;
   }
@@ -176,26 +188,15 @@ a.link:hover h1 {
   }
 }
 
-@media only screen and (max-width: 810px) {
-  .expanding-skills {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .side-by-side {
-    grid-template-columns: auto;
-    gap: 0;
-  }
-}
-
-@media (min-width: 910px) {
-  .expanding-skills {
-    display: none;
+@media (min-width: 600px) {
+  .skills-list {
+    gap: 0.75rem;
   }
 
-  .profile p {
-    padding-top: 0;
+  .skills-list-item {
+    font-size: 3rem;
+    width: 3rem;
+    height: 3rem;
   }
 }
 
@@ -221,11 +222,7 @@ a.link:hover h1 {
     display: none;
   }
 
-  .skills ul {
-    width: 17.5rem;
-  }
-
-  .skills ul li {
+  .skills-list-item {
     font-size: 2rem;
     padding-right: 2.5rem;
     padding-bottom: 1.5rem;

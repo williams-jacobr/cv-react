@@ -107,13 +107,13 @@
   color: #2b2741;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .personal-info-container {
     padding: 1rem 1.5rem;
   }
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 1023px) {
   .personal-info-container {
     background: #2b2741;
   }

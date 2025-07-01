@@ -1,5 +1,5 @@
-import styles from "./Header.module.css";
-import personalStyles from "../../PersonalInfo/PersonalInfo.module.css";
+import styles from './Header.module.css';
+import personalStyles from '../../PersonalInfo/PersonalInfo.module.css';
 import {
   BsFacebook,
   BsLinkedin,
@@ -7,7 +7,7 @@ import {
   BsEnvelope,
   BsTelephone,
   BsGeo,
-} from "react-icons/bs";
+} from 'react-icons/bs';
 
 const Header = function () {
   return (
@@ -43,7 +43,7 @@ const Header = function () {
           </div>
         </li>
       </ul>
-      <ul className={styles["social-media"]}>
+      <ul className={styles['social-media']}>
         <li>
           <a href="https://www.facebook.com/jacob.williams.33">
             <BsFacebook />
